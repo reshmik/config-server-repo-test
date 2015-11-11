@@ -22,6 +22,9 @@ endpoints:
      sensitive: false
 
 spring:
+   zipkin:
+     host: opsmgr.vert.fe.gopivotal.com
+       port: 9410
    sleuth:
       log:
         json:
