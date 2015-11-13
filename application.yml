@@ -12,12 +12,7 @@ eureka:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
 logging:
   pattern:
-    console: '%clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %5p'
-  level:
-     io:
-        pivotal: DEBUG
-     com:
-        netflix: WARN
+    level: '%clr([trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}]){yellow} %5p'
 
 endpoints:
    health:
