@@ -33,6 +33,11 @@ eureka:
 ---
 spring:
   profiles: local
+  
+security:
+  basic:
+    enabled: false
 eureka:
   instance:
     nonSecurePort: ${server.port}
+
