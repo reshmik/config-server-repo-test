@@ -1,4 +1,6 @@
 ---
+ribbon:
+  IsSecure: false
 info:
   description: Spring Cloud Config Repo
   url: https://github.com/spring-cloud-samples
@@ -33,10 +35,6 @@ eureka:
 ---
 spring:
   profiles: local
-  
-security:
-  basic:
-    enabled: false
 eureka:
   instance:
     nonSecurePort: ${server.port}
